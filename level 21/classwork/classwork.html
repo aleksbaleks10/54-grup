@@ -1,0 +1,42 @@
+<!-- საკლასო დავალება: გადადით რესურსებში და გადმოიწერეთ ორივე ვიდეო. ეს ვიდეოები შემდეგ მოათავსეთ იმ ფოლდერში, სადაც უკვე გაქვთ index.html და რა უნდა გააკეთოთ: video თეგში მოათავსეთ 2 source თეგი, სადაც გამოიყენებთ ამ ვიდეოებს და ბოლოს გაწერეთ სათადარიგო ტექსტი (Video not supported). video თეგთან აუცილებლად გამოიყენეთ controls ატრიბუტი
+ -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <video controls>
+        <source src="video1.mp4" type="video/mp4">
+        <source src="video2.mp4" type="video/mp4">
+    </video>
+</body>
+</html>
+<!--  — Today at 8:40 PM
+საკლასო დავალება: თქვენს ვებსაიტზე ჩააშენეთ 3 ვიდეო, 3-ვე ჩააშენეთ iframe-ის გამოყენებით. ასევე ვებსაიტზე დაამატეთ მარტივი ფორმა, სადაც იქნება 3 ინფუთი და 1 დადასტურების ღილაკი -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID1" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID2" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID3" frameborder="0" allowfullscreen></iframe>
+    <form action="submit_form.php" method="post">
+
+        <label for="name">სახელი:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">ელ. ფოსტა:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">შეტყობინება:</label>
+        <input type="text" id="message" name="message" required><br><br>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+</body>
+</html>

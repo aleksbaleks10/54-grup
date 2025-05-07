@@ -1,0 +1,63 @@
+#p1 {
+    color: #FF5733;
+    background-color: #C70039;
+}
+#p2 {
+    color: #DAF7A6;
+    background-color: #581845;
+}
+#p3 {
+    color: #C70039;
+    background-color: #900C3F;
+}
+#p4 {
+    color: #FFC300;
+    background-color: #FF5733;
+}
+#p5 {
+    color: #581845;
+    background-color: #DAF7A6;
+}
+#p6 {
+    color: #900C3F;
+    background-color: #FFC300;
+}
+#p7 {
+    color: #C70039;
+    background-color: #FF5733;
+}
+#p8 {
+    color: #DAF7A6;
+    background-color: #581845;
+}
+#p9 {
+    color: #FFC300;
+    background-color: #900C3F;
+}
+#p10 {
+    color: #FF5733;
+    background-color: #C70039;
+}
+
+
+
+
+
+
+#red-box {
+    width: 400px;
+    height: 400px;
+    background-color: #ff0000;
+}
+
+#green-box {
+    width: 200px;
+    height: 100px;
+    background-color: #00ff00;
+}
+
+#blue-box {
+    width: 50px;
+    height: 100px;
+    background-color: #0000ff;
+}

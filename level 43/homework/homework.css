@@ -1,0 +1,36 @@
+/* 4. Remove the default bullet points from an unordered list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* 5. Style every even list item with a different background color */
+ul li:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* 6. Change the text color of every third list item */
+ul li:nth-child(3n) {
+    color: #ff6347;
+}
+
+/* 7. Add a custom icon or emoji as the list-style for all items */
+ul li {
+    list-style-type: none;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li::before {
+    content: "💀";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 8. Make the first and last list items bold */
+ul li:first-child,
+ul li:last-child {
+    font-weight: bold;
+}

@@ -1,0 +1,7 @@
+#main-div {
+    width: 1000px;
+    height: 750px;
+    background-image: url('background-image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}

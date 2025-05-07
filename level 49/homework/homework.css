@@ -1,0 +1,69 @@
+/* 4) Align all flex items to the center of the container. */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 5) Distribute items evenly across the container with space between them. */
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 6) Make one item grow twice as much as the others. */
+.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
+}
+
+.item-special {
+  flex-grow: 2;
+}
+
+/* 7) Reverse the order of the flex items. */
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* 8) Align one specific item to the bottom while keeping others at the top. */
+.container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.item-bottom {
+  margin-top: auto;
+}
+
+/* 9) Wrap items to the next line when the container is too small. */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* 10) Center all items both horizontally and vertically. */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 11) Set all items to have equal width regardless of content size. */
+.container {
+  display: flex;
+}
+
+.item {
+  flex: 1;
+}
+
+/* 12) Change the direction of items to a vertical column. */
+.container {
+  display: flex;
+  flex-direction: column;
+}

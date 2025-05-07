@@ -1,0 +1,44 @@
+<!-- საკლასო დავალება:
+html-ის დოკუმენტში აიღეთ ერთი პარაგრაფი, სადაც იქნება 100 სიტყვაა.
+თქვენი დავალებაა, რომ ეს პარაგრაფი იყოს რესპონსიული, ანუ მისი ზომა მორგებული უნდა იყოს ნებისმიერი ეკრანის ზომას -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>რესპონსიული პარაგრაფი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .responsive-paragraph {
+            margin: 20px;
+            padding: 15px;
+            background-color: #f8f8f8;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+            line-height: 1.6;
+        }
+        @media (max-width: 600px) {
+            .responsive-paragraph {
+                font-size: 0.9em;
+            }
+        }
+        @media (max-width: 400px) {
+            .responsive-paragraph {
+                font-size: 0.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="responsive-paragraph">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione sequi neque ipsam nemo quasi quia sapiente dolores quaerat porro amet, ex temporibus error exercitationem perferendis eaque dolorum id quidem modi? Debitis necessitatibus rem fugiat iusto veritatis voluptas saepe sunt nesciunt vero laudantium dicta quidem dolorum laborum, ut sapiente alias rerum consequuntur tempore earum enim asperiores obcaecati! At distinctio temporibus velit illum, nobis rem quam nemo. At omnis aliquid facere nam explicabo, numquam sit vero quos similique id voluptatum odio odit porro a iusto error nemo. Magnam libero reiciendis itaque officia? Illum illo qui eaque totam laborum maxime velit fugit ipsum!-
+    </p>
+    </div>
+</body>
+</html>

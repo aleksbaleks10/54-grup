@@ -1,0 +1,37 @@
+<!-- 3) შექმენით div block და მასში ჩაამატეთ 5 პარაგრაფი.
+
+div block-ს გაუწერეთ inline სტილი და შეამოწმეთ ეს რამდენად გადავა პარაგრაფებზე -->
+<div style="color: red; font-size: 16px;">
+    <p>პირველი პარაგრაფი</p>
+    <p>მეორე პარაგრაფი</p>
+    <p>მესამე პარაგრაფი</p>
+    <p>მეოთხე პარაგრაფი</p>
+    <p>მეხუთე პარაგრაფი</p>
+  </div>
+<!--5) შექმენით სექცია და მასში დაამატეთ: 2 პარაგრაფი, 2 სათაური, 2 ღილაკი.
+
+სექციას გაუწერეთ inline სტილი, სადაც გამოყენებული იქნება შემდეგი კუთვნილებები: color, background-color, align-items.
+
+რომელიმე პარაგრაფს გაუწერეთ inline სტილი, სადაც აირჩევთ სხვა ფერს, ფონის ფერს და ტექსტის განლაგებას.
+
+შეამოწმეთ რომელი უფრო მნიშვნელოვანია - საკუთარი inline სტილი თუ მშობლის სტილი-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section Example</title>
+</head>
+<body>
+    <section style="color: red; background-color: lightgray; display: flex; align-items: center;">
+        <h1>სათაური 1</h1>
+        <h2>სათაური 2</h2>
+        <p style="color: blue; background-color: yellow; text-align: center;">
+            ეს არის პირველი პარაგრაფი, რომელსაც აქვს თავისი inline სტილი.
+        </p>
+        <p>ეს არის მეორე პარაგრაფი.</p>
+        <button>ღილაკი 1</button>
+        <button>ღილაკი 2</button>
+    </section>
+</body>
+</html>

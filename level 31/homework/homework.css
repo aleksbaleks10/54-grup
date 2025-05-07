@@ -1,0 +1,10 @@
+/* გააკეთეთ ნახაზი css-ის ანატომიის შესახებ - ნახაზში ახსნილი უნდა იყოს რა არის rule, selector, declaration, property, value */
+h1 {
+    color: blue;
+    font-size: 20px;
+  }
+/* თქვენი სიტყვებით ახსენით რა არის descendant selector */
+  div p {
+    color: blue;
+  }
+/*  */

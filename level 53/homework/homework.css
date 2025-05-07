@@ -1,0 +1,76 @@
+/* Scale an image up when hovered. */
+img:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s;
+}
+/* Rotate a button 45 degrees on click. */
+button:active {
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+}
+/* Translate a div 50px to the right on hover. */
+div:hover {
+    transform: translateX(50px);
+    transition: transform 0.3s;
+}
+/* Continuously rotate an icon using animation. */
+@keyframes rotateIcon {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.icon {
+    animation: rotateIcon 2s linear infinite;
+}
+/* Scale down a card slightly on hover for a "press" effect. */
+.card:hover {
+    transform: scale(0.95);
+    transition: transform 0.2s;
+}
+/* Translate a modal from bottom to center on open. */
+.modal {
+    transform: translateY(100%);
+    transition: transform 0.5s;
+}
+
+.modal.open {
+    transform: translateY(0);
+}
+/* Rotate a loading spinner indefinitely. */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+/* Translate a tooltip slightly upward when visible. */
+.tooltip {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Scale a background image slightly for a zoom effect. */
+.background {
+    background-size: 100%;
+    transition: background-size 0.3s;
+}
+
+.background:hover {
+    background-size: 110%;
+}
+/* Rotate a text element 180 degrees on toggle. */
+.text {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+}
+
+.text.toggled {
+    transform: rotate(180deg);
+}

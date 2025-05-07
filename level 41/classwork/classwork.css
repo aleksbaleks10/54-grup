@@ -1,0 +1,16 @@
+a {
+    color: blue;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: green;
+    font-size: 18px;
+}
+
+a:active {
+    background-color: black;
+    color: white;
+}

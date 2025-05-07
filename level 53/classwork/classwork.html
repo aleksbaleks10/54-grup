@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .custom-element {
+            width: 300px;
+            height: 150px;
+            background-color: green;
+            border: 2px solid black;
+            border-radius: 20px 20px 50% 50%;
+            transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, margin-top 0.3s ease;
+        }
+
+        .custom-element:hover {
+            transform: rotate(40deg);
+            width: 600px;
+            height: 300px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-element"></div>
+</body>
+</html>

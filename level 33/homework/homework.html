@@ -1,0 +1,100 @@
+<!-- 2) თქვენი სიტყვებით ახსენით რა განსხვავებაა id და class ატრიბუტებს შორის, ასევე ახსენით როდის რომლის გამოყენება სჯობს -->
+<!-- class არის მრავალი ფორმის გასტილვა და id არის მხოლოდ ერთი ელემენტის გასტილვა -->
+
+
+<!-- 3) html-ის დოკუმენტში დაამატეთ 5 პარაგრაფი და თითოეულს გაუწერეთ განსხვავებული ფერი, გამოიყენეთ id ატრიბუტი თითეულ ელემენტთან და სელექტორიც გაწერეთ id-ის გამოყენებით -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #para1 {
+            color: red;
+        }
+        #para2 {
+            color: blue;
+        }
+        #para3 {
+            color: green;
+        }
+        #para4 {
+            color: purple;
+        }
+        #para5 {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <p id="para1">ეს არის პირველი პარაგრაფი.</p>
+    <p id="para2">ეს არის მეორე პარაგრაფი.</p>
+    <p id="para3">ეს არის მესამე პარაგრაფი.</p>
+    <p id="para4">ეს არის მეოთხე პარაგრაფი.</p>
+    <p id="para5">ეს არის მეხუთე პარაგრაფი.</p>
+</body>
+</html>
+
+
+
+<!-- 4) html-ის დოკუმენტში დაამატეთ 5 ღილაკი და ყველა მათგანის ფონის ფერი გაწერეთ შავი, გამოიყენეთ class -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .black-background {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button class="black-background">ღილაკი 1</button>
+    <button class="black-background">ღილაკი 2</button>
+    <button class="black-background">ღილაკი 3</button>
+    <button class="black-background">ღილაკი 4</button>
+    <button class="black-background">ღილაკი 5</button>
+</body>
+</html>
+
+
+
+<!-- 5) თქვენი სიტყვებით ახსენით რა არის css specificity და ჩამოწერეთ პრიორიტეტების სია -->
+<p style="color: red;">ეს ტექსტი წითელი ფერისაა.</p>
+
+
+
+<!-- 6) html-ის დოკუმენტში დაამატეთ ერთი ღილაკი, მას გაუწერეთ id და class ატრიბუტები.
+
+css-ის კოდში ეს ელემენტი აირჩიეთ ორჯერ: 1 - id in selector, 2 - class in selector და ორივე css-ის წესში აირჩიეთ color კუთვნილება. კოდი ისე გაწერეთ რომ ფერი გამოვიდეს ლურჯი (დააკვირდით ამ მნიშვნელობას რომელ წესში გადასცემთ color კუთვნილებას)
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         #myButton {
+             color: red;
+         }
+         .buttonClass {
+             color: blue;
+         }
+     </style>
+ </head>
+ <body>
+     <button id="myButton" class="buttonClass">ღილაკი</button>
+ </body>
+ </html>
+ 
+
+
+ <!--  -->
+ .element {
+    color: rgb(123, 104, 238); /* დანა ფერი */
+}

@@ -1,0 +1,18 @@
+<!-- 2) თქვენი სიტყვებით ახსენით რა არის შემდეგი თეგები და ატრიბუტები, რაში გამოიყენება ისინი: video, controls, source, src, type, iframe -->
+<!-- - <video> გამოიყენება HTML-ში ვიდეოს ჩასასმელად. იგი მომხმარებელს საშუალებას აძლევს ვებსაიტის ვიდეო ფაილი ჩააშენოს. -->
+<!-- <controls> ატრიბუტი, რომელიც ემატება <video> თეგს. მისი საშუალებით მომხმარებელს უჩნდება პლეიერის ღილაკები, როგორიცაა „დაკვრა“, „დაპაუზება“, „ხმის რეგულირება“ და სხვა.-->
+<!-- <source> ამ თეგის საშუალებით შესაძლებელია ვიდეოს სხვადასხვა ფორმატში მითითება, რათა ბრაუზერმა აირჩიოს შესაბამისი ფაილი -->
+<!-- - src ატრიბუტი, რომელიც გამოიყენება <source> თეგში და მიუთითებს ვიდეო ფაილის.-->
+<!-- - type ატრიბუტი, რომელიც source თეგში გამოიყენება და განსაზღვრავს ვიდეო ფაილის ტიპს (მაგ.,video|MP4და სხვა)-->
+ <!-- <ifrem> თეგი, რომელიც გამოიყენება სხვა ვებ-გვერდის ჩასასმელად მიმდინარე გვერდში. მაგალითად, YouTube ვიდეოს ჩასართავად ან სხვა რესურსების დასამატებლად. -->
+<!-- 3) გადმოწერეთ შემდეგი 2 ვიდეო და ჩაამატეთ ერთ ვიდეო თეგში source თეგების გამოყენებით: -->
+    <video controls>
+        <source src="countdown.mp4" type="video/mp4">
+        <source src="another-video.mp4" type="video/mp4">
+    </video>
+<!-- 4) youtube-დან ვებსაიტზე ჩაამატეთ 5 ვიდეო, iframe-ის გამოყენებით -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_1" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_5" frameborder="0" allowfullscreen></iframe>
