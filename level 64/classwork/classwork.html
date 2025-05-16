@@ -1,0 +1,48 @@
+<!-- საკლასო დავალება:
+
+ვებსაიტზე დაამატეთ ერთი ღილაკი და ერთი მთავარი სათაური.
+
+როდესაც ღილაკს დააკლიკებს მომხმარებელი, მთავარი სათაური უნდა განლაგდეს ცენტრში (textAlign) -->
+
+<!-- საკლასო დავალება:
+
+ვებსაიტზე დაამატეთ ერთი სათაური.
+
+როდესაც სათაურს დააკლიკებთ, ამ სათაურის განლაგება უნდა იყოს ცენტრში, მისი fontSize უნდა გახდეს 50px, fontWeight 900 და ტექსტის ფერი მწვანე -->
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სათაური</title>
+    <style>
+        h1 {
+            text-align: left;
+            font-size: 30px;
+            font-weight: 400;
+            color: black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="changeStyle(this)">დააკლიკე სათაურზე</h1>
+    <div id="container"></div>
+
+    <script>
+        function changeStyle(element) {
+            element.style.textAlign = "center";
+            element.style.fontSize = "50px";
+            element.style.fontWeight = "900";
+            element.style.color = "green";
+
+            let newElement = document.createElement("p");
+            newElement.textContent = "ახალი ელემენტი დამატებულია!";
+            newElement.style.color = "blue";
+            newElement.style.fontSize = "20px";
+
+            document.getElementById("container").appendChild(newElement);
+        }
+    </script>
+</body>
+</html>
