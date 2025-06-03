@@ -1,0 +1,148 @@
+<!-- 1) -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+       <p id="output"></p>
+    <script>
+        let message1 = "Welcome!";
+        document.getElementById("output").innerText = message;
+    </script>
+
+ </body>
+ </html>
+
+<!-- 2) -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="greeting">Hello!</div>
+    <button onclick="changeText()">Click Me</button>
+    
+    <script>
+        function changeText() {
+            document.getElementById("greeting").innerText = "Hi there!";
+        }
+    </script>
+</body>
+</html>
+
+<!-- 3) -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            document.getElementById("title").style.color = "red";
+        }
+    </script>
+
+</body>
+</html>
+<!-- 4) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="greeting">Hello!</div>
+    <button onclick="changeText()">Click Me</button>
+    
+    <script>
+        function changeText() {
+            document.getElementById("greeting").innerText = "Hi there!";
+        }
+    </script>
+</body>
+</html>
+
+<!-- 5) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+</head>
+<body>
+
+    <h1 id="title">Hello World</h1>
+    <button onclick="changeColor()">Change Color</button>
+
+    <script>
+        function changeColor() {
+            document.getElementById("title").style.color = "red";
+        }
+    </script>
+
+</body>
+</html>
+<!-- 6) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Counter: <span id="count">0</span></h1>
+    <button onclick="increaseCounter()">Increase</button>
+
+    <script>
+        let counter = 0;
+
+        function increaseCounter() {
+            counter++;
+            document.getElementById("count").textContent = counter; 
+        }
+    </script>
+
+</body>
+</html>
+<!-- 7) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #status {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+
+    <p id="status">Offline</p>
+    <button onclick="toggleStatus()">Go Online</button>
+
+    <script>
+        function toggleStatus() {
+            let statusElement = document.getElementById("status");
+            statusElement.textContent = "Online";
+            statusElement.style.color = "green";
+        }
+    </script>
+
+</body>
+</html>
