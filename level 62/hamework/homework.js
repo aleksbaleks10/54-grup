@@ -1,11 +1,11 @@
 // Convert a list of strings to uppercase
-const strings = ["hello", "world", "javascript"];
-const uppercaseStrings = strings.map(str => str.toUpperCase());
+let strings = ["hello", "world", "javascript"];
+let  uppercaseStrings = strings.map(str => str.toUpperCase());
 console.log(uppercaseStrings);
 
 // Square each number in a given list of integers
-const numbers = [1, 2, 3, 4, 5];
-const squaredNumbers = numbers.map(num => num ** 2);
+let  numbers = [1, 2, 3, 4, 5];
+let  squaredNumbers = numbers.map(num => num ** 2);
 console.log(squaredNumbers); 
 
 // Add 5 to each element in a list of numbers
