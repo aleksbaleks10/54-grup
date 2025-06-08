@@ -1,10 +1,7 @@
-// 5) ღილაკზე დაკლიკებისას alert box-მა უნდა გამოიტანოს თქვენი ასაკი
-function button(){ 
-    onclick(button)
-    alert(10)
+function showMessage() {
+    alert("Hello!");
 }
-// 6) როდესაც სურათს დააკლიკებთ, მას უნდა შეეცვალოს src ატრიბუტის მნიშვნელობა
-function picture(){
-    onclick(picture)
-    alert(img="control flow paint")
-}
+
+  function showMessage() {
+    alert("Hi!");
+  }
