@@ -17,19 +17,18 @@ if (score >= 90) {
 }
 
 // 4) Determine the largest among three numbers
-let num2 = parseInt(prompt("Enter first number:"));
-let num3 = parseInt(prompt("Enter second number:"));
-let num4 = parseInt(prompt("Enter third number:"));
-if (num2 === num2 && num3 === num4) {
-    console.log("All numbers are equal");
-} else if (num2 >= num3 && num2 >= num4) {
-    console.log(`Largest number is {num1}`);
-} else if (num2 >= num2 && num3 >= num4) {
-    console.log(`Largest number is {num3}`);
-} else {
-    console.log(`Largest number is {num4}`);
+let num2 = Number(prompt("Enter number: "))
+let num3 = Number(prompt("Enter number: "))
+let num4 = Number(prompt("Enter number: "))
+if (num1 > num2 && num1 > num3 ) {
+    console.log("First number is the largest")
+} else if (num2 > num1 && num2 > num3) {
+    console.log("Second number is the largest")
+} else if (num3 > num1 && num3 > num2) {
+    console.log("Third number is the largest")
+} else if (num1 === num2 && num2 === num3) {
+    console.log("Numbers are equal")
 }
-
 // 5) Check if a character is a vowel or consonant
 let char = prompt("Enter a character:").toLowerCase();
 console.log("aeiou".includes(char) ? "Vowel" : "Consonant");
