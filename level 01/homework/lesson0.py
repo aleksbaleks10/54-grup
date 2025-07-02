@@ -2,10 +2,10 @@ name="aleks makharadze"
 print(name)
 
 name="aleks makhardze"
-save(name)
+save=(name)
 
-age"9"
-save(age)
+age="9"
+save=(age)
 
-color"black"
-save(color)
+color ="black"
+save=(color)
