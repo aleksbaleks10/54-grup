@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  background-color: #1a1a1a;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #2c2c2c;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  width: 300px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.title {
+  color: #a1ff60;
+  margin: 5px 0;
+}
+
+.quote {
+  font-style: italic;
+  margin: 10px 0 20px;
+  color: #ccc;
+}
+
+.buttons button {
+  display: block;
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  background-color: #3a3a3a;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #00ff88;
+  color: #000;
+}
