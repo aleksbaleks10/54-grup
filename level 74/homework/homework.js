@@ -1,59 +1,45 @@
-const taskInput = document.getElementById('taskInput');
-const addBtn = document.getElementById('addBtn');
-const taskList = document.getElementById('taskList');
-
-const tasks = [];
-
-addBtn.addEventListener('click', function () {
-  const taskText = taskInput.value.trim();
-  if (taskText === '') return;
-
-  const li = document.createElement('li');
-  li.textContent = taskText;
-
-  const deleteBtn = document.createElement('button');
-  deleteBtn.textContent = 'Delete';
-  deleteBtn.addEventListener('click', function () {
-    taskList.removeChild(li);
-    const index = tasks.indexOf(taskText);
-    if (index !== -1) tasks.splice(index, 1);
-  });
-
-  li.appendChild(deleteBtn);
-  taskList.appendChild(li);
-  tasks.push(taskText);
-
-  taskInput.value = '';
+// 1. Change text on button click
+const textBtn = document.getElementById("textBtn");
+const textPara = document.getElementById("textPara");
+textBtn.addEventListener("click", () => {
+  textPara.textContent = "New text!";
 });
 
-document.getElementById("changeTextBtn").addEventListener("click", () => {
-  document.getElementById("textParagraph").textContent = "ტექსტი შეიცვალა!";
-});
-
-
+// 2. Background color changer every 2 seconds
+function getRandomColor() {
+  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
 setInterval(() => {
-  const color = "#" + Math.floor(Math.random() * 16777215).toString(16).padStart(6, "0");
-  document.body.style.backgroundColor = color;
+  document.body.style.backgroundColor = getRandomColor();
 }, 2000);
 
+// 3. Add Names to List
+const nameInput = document.getElementById("nameInput");
+const addNameBtn = document.getElementById("addNameBtn");
+const nameList = document.getElementById("nameList");
 
-document.getElementById("addNameBtn").addEventListener("click", () => {
-  const input = document.getElementById("nameInput");
-  const name = input.value.trim();
-  if (name) {
-    const li = document.createElement("li");
-    li.textContent = name;
-    document.getElementById("nameList").appendChild(li);
-    input.value = "";
-  }
+addNameBtn.addEventListener("click", () => {
+  if (nameInput.value.trim() === "") return;
+  const li = document.createElement("li");
+  li.textContent = nameInput.value;
+  nameList.appendChild(li);
+  nameInput.value = "";
 });
 
-
+// 4. Digital Clock
 function updateClock() {
   const now = new Date();
-  const time = now.toLocaleTimeString('ka-GE');
-  document.getElementById("clock").textContent = time;
+  const time = now.toLocaleTimeString("en-GB"); // HH:MM:SS
+  document.getElementById("clockDisplay").textContent = time;
 }
 setInterval(updateClock, 1000);
-updateClock();
 
+// 5. Array of Colors - Cycle through on click
+const colors = ["#f44336", "#2196F3", "#4CAF50", "#FFEB3B"];
+let colorIndex = 0;
+const colorCycleBtn = document.getElementById("colorCycleBtn");
+
+colorCycleBtn.addEventListener("click", () => {
+  document.body.style.backgroundColor = colors[colorIndex];
+  colorIndex = (colorIndex + 1) % colors.length;
+});

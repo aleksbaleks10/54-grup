@@ -1,0 +1,101 @@
+/* Reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit', sans-serif;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card Container */
+.card {
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+  width: 350px;
+  padding: 24px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Card Image */
+.card-image {
+  width: px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+/* Title */
+.card-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.card-description {
+  font-size: 18px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 20px;
+}
+
+/* Price and Time Left */
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.eth-icon {
+  width: 12px;
+  height: auto;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: hsl(215, 51%, 70%);
+  font-size: 16px;
+}
+
+/* Creator Info */
+.card-creator {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.creator-name {
+  color: white;
+  font-weight: 400;
+}
