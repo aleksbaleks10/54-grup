@@ -1,5 +1,5 @@
 // === 5–9: break ===
-console.log("Section 5–9:");
+console.log("Section 5-9:");
 for (let i = 1; i <= 20; i++) {
   if (i === 13) break;
   console.log("Num:", i);
@@ -30,7 +30,7 @@ for (let i = 1; ; i++) {
 }
 
 // === 10–14: continue ===
-console.log("\nSection 10–14:");
+console.log("nSection 10–14:");
 for (let i = 1; i <= 20; i++) {
   if (i === 13) continue;
   console.log("Num:", i);
