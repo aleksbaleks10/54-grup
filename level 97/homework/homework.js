@@ -69,3 +69,4 @@ const people = [
   { firstName: "Jane", lastName: "Smith" }
 ];
 const fullNames = people.map(p => `${p.firstName} ${p.lastName}`);
+
