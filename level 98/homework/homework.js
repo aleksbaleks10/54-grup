@@ -175,3 +175,58 @@ console.log("29:", lastIndexZero);
 const nums30 = [1, 2, 3];
 const removedNum = nums30.pop();
 console.log("30:", removedNum);
+// 33. pop() to remove last fruit name
+const fruits33 = ["apple", "banana", "cherry"];
+const removedFruit = fruits33.pop();
+console.log("33:", removedFruit); // "cherry"
+
+// 34. Continuously pop elements until array is empty
+const items34 = [1, 2, 3, 4];
+while (items34.length > 0) {
+  const poppedItem = items34.pop();
+  console.log("34: Popped:", poppedItem);
+}
+
+// 35. pop() to remove last object from array of users
+const users35 = [
+  { name: "Tom", age: 25 },
+  { name: "Lisa", age: 32 },
+  { name: "Mark", age: 28 }
+];
+const removedUser = users35.pop();
+console.log("35:", removedUser); // { name: "Mark", age: 28 }
+
+// 36. pop() and store last element in another variable
+const nums36 = [10, 20, 30];
+const lastElement36 = nums36.pop();
+console.log("36:", lastElement36); // 30
+
+// 37. pop() to remove last string from array
+const animals37 = ["cat", "dog", "bird"];
+const removedAnimal = animals37.pop();
+console.log("37:", removedAnimal); // "bird"
+
+// 38. splice() to remove first 2 elements
+const nums38 = [10, 20, 30, 40, 50];
+nums38.splice(0, 2);
+console.log("38:", nums38); // [30, 40, 50]
+
+// 39. splice() to insert "orange" and "grape" at index 2
+const fruits39 = ["apple", "banana", "cherry"];
+fruits39.splice(2, 0, "orange", "grape");
+console.log("39:", fruits39); // ["apple", "banana", "orange", "grape", "cherry"]
+
+// 40. splice() to replace element at index 3 with "mango"
+const fruits40 = ["apple", "banana", "orange", "grape", "cherry"];
+fruits40.splice(3, 1, "mango");
+console.log("40:", fruits40); // ["apple", "banana", "orange", "mango", "cherry"]
+
+// 41. splice() to remove last 3 elements
+const nums41 = [1, 2, 3, 4, 5, 6];
+nums41.splice(-3);
+console.log("41:", nums41); // [1, 2, 3]
+
+// 42. splice() to insert number into middle without deleting
+const nums42 = [10, 20, 40, 50];
+nums42.splice(2, 0, 30);
+console.log("42:", nums42); // [10, 20, 30, 40, 50]
