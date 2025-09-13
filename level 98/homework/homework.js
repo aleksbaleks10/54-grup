@@ -229,4 +229,4 @@ console.log("41:", nums41); // [1, 2, 3]
 // 42. splice() to insert number into middle without deleting
 const nums42 = [10, 20, 40, 50];
 nums42.splice(2, 0, 30);
-console.log("42:", nums42); // [10, 20, 30, 40, 50]
+console.log("42:", nums42); // [10, 20, 30, 40, 50]        
